@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{54B3EAF4-BCEE-45A3-A77B-36E690A208C3}</ProjectGuid>
+    <ProjectGuid>{7C9E0631-19D4-4942-94FD-F9B1F1854221}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CS260</RootNamespace>
-    <AssemblyName>CS260</AssemblyName>
+    <RootNamespace>Hashing</RootNamespace>
+    <AssemblyName>Hashing</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Driver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ChainHashClasses\ChainHashClasses.csproj">
+      <Project>{8265db39-6d00-4307-812e-aad2714da06f}</Project>
+      <Name>ChainHashClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StringHashClasses\StringHashClasses.csproj">
+      <Project>{c67022dd-e491-461a-bcae-bcabfe2327ca}</Project>
+      <Name>StringHashClasses</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{54B3EAF4-BCEE-45A3-A77B-36E690A208C3}</ProjectGuid>
+    <ProjectGuid>{170F2D02-0E9E-45B6-8DC4-FCD9024577D3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CS260</RootNamespace>
-    <AssemblyName>CS260</AssemblyName>
+    <RootNamespace>ParseTree</RootNamespace>
+    <AssemblyName>ParseTree</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="ParseNode.cs" />
+    <Compile Include="ParseTree.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

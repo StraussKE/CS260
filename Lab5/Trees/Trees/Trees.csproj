@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{54B3EAF4-BCEE-45A3-A77B-36E690A208C3}</ProjectGuid>
+    <ProjectGuid>{AD489EA2-5CD6-40BC-AE2B-F4138495644D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CS260</RootNamespace>
-    <AssemblyName>CS260</AssemblyName>
+    <RootNamespace>Trees</RootNamespace>
+    <AssemblyName>Trees</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Driver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Tree234Classes\Tree234Classes.csproj">
+      <Project>{4a0a1352-92de-4062-a3fa-e42ef2317875}</Project>
+      <Name>Tree234Classes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WorldTreeClasses\WordTreeClasses.csproj">
+      <Project>{7f943c4b-38a7-46e3-9346-371e3e87517b}</Project>
+      <Name>WordTreeClasses</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

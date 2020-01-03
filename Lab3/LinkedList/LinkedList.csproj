@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{54B3EAF4-BCEE-45A3-A77B-36E690A208C3}</ProjectGuid>
+    <ProjectGuid>{CB3E1CD1-842F-4DDB-ACAB-30F661FA2908}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CS260</RootNamespace>
-    <AssemblyName>CS260</AssemblyName>
+    <RootNamespace>LinkedList</RootNamespace>
+    <AssemblyName>LinkedList</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Driver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\TextClassClasses\TextClassClasses.csproj">
+      <Project>{0766ea39-ca66-4892-ba26-df8060e16eac}</Project>
+      <Name>TextClassClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudentListClasses\StudentListClasses.csproj">
+      <Project>{bce38786-373a-4ed9-8d30-93f47212dd66}</Project>
+      <Name>StudentListClasses</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
