@@ -50,7 +50,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\GraphClasses\GraphClasses.csproj">
+    <ProjectReference Include="..\GraphClasses\GraphClasses.csproj">
       <Project>{c1d6becb-6e11-4aff-9467-a6aa96df8b46}</Project>
       <Name>GraphClasses</Name>
     </ProjectReference>
