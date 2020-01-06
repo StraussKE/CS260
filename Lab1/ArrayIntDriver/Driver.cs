@@ -3,8 +3,9 @@
  */
 
 using System;
+using IntArray;
 
-namespace Lab1ArrayIntConsoleApp
+namespace ArrayIntDriver
 {
     class Driver
     {

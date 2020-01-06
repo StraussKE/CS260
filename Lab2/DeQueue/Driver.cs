@@ -8,8 +8,9 @@
 //  Transpiled into C# by Katie Strauss 10/26/2019
 
 using System;
+using DeQueueClasses;
 
-namespace Lab2Dequeue
+namespace DeQueueDriver
 {
     class Driver
     {
@@ -262,16 +263,3 @@ namespace Lab2Dequeue
         }
     }
 }
-/*      
-        # ifdef TEST_STACK
-                
-        #endif //TEST_STACK
-
-
-                return 0;
-                }
-
-        }
-        }
-}
-*/

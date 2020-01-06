@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CB3E1CD1-842F-4DDB-ACAB-30F661FA2908}</ProjectGuid>
+    <ProjectGuid>{513EADF6-EEDB-4E2F-AE0B-830EE848558C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LinkedList</RootNamespace>
-    <AssemblyName>LinkedList</AssemblyName>
+    <RootNamespace>DeQueue</RootNamespace>
+    <AssemblyName>DeQueue</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,13 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\StudentListClasses\StudentListClasses.csproj">
-      <Project>{bce38786-373a-4ed9-8d30-93f47212dd66}</Project>
-      <Name>StudentListClasses</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TextClass\TextClassClasses.csproj">
-      <Project>{286151b9-e047-4962-bf43-cde9375473cf}</Project>
-      <Name>TextClassClasses</Name>
+    <ProjectReference Include="..\DeQueueClasses\DeQueueClasses.csproj">
+      <Project>{622a5839-c118-42dc-9c8f-b4b81a1e0fd3}</Project>
+      <Name>DeQueueClasses</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

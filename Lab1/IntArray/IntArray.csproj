@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{845FBB64-B4FB-43F2-A80A-8B78BEE4C88C}</ProjectGuid>
+    <ProjectGuid>{A028A1CD-CA97-40C0-A37F-3B871287817C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>IntArray</RootNamespace>

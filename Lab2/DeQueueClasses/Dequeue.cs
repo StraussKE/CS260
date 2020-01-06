@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lab2Dequeue
+namespace DeQueueClasses
 {
     public class Dequeue
     {

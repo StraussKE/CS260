@@ -15,7 +15,7 @@
 
 using System;
 
-namespace Lab1ArrayIntConsoleApp
+namespace IntArray
 {
     public class ArrayInt
     {

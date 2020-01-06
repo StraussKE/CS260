@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{513EADF6-EEDB-4E2F-AE0B-830EE848558C}</ProjectGuid>
+    <ProjectGuid>{C1F86A64-1088-4250-A511-BBE3BD15EAB5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DeQueue</RootNamespace>
-    <AssemblyName>DeQueue</AssemblyName>
+    <RootNamespace>IntArray</RootNamespace>
+    <AssemblyName>IntArray</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dequeue.cs" />
     <Compile Include="Driver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Stack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IntArray\IntArray.csproj">
+      <Project>{a028a1cd-ca97-40c0-a37f-3b871287817c}</Project>
+      <Name>IntArray</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

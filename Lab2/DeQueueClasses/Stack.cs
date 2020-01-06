@@ -1,8 +1,8 @@
 ﻿
 
-namespace Lab2Dequeue
+namespace DeQueueClasses
 {
-    class Stack
+    public class Stack
     {
         private Dequeue theQueue;
 
