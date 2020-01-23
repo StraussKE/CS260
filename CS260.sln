@@ -54,6 +54,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorts", "Lab7\Sorts\Sorts.csproj", "{B4CD29AB-0D1C-4304-A4E9-3786FCAE5C9D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab4", "Lab4", "{C880CB6A-3DAA-4E80-BA5B-D5978488B3CB}"
+	ProjectSection(SolutionItems) = preProject
+		ThisIsNotAGoodLabForCSharp.md = ThisIsNotAGoodLabForCSharp.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab8", "Lab8", "{AC284CE4-1F9B-4F84-9315-1EB942E9C2DC}"
 EndProject
