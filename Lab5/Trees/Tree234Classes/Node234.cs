@@ -1,10 +1,11 @@
-﻿//
-//  Node234.h
+﻿//  Based on
+//  Node234.h and Node234.cpp
 //  Lab5
 //
 //  Created by Jim Bailey on 5/12/17.
 //  Copyright © 2017 jim. All rights reserved.
 //
+//  Transpiled by Katie Strauss
 
 using System;
 using System.Collections.Generic;

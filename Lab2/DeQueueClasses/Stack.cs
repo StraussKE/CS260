@@ -1,6 +1,4 @@
-﻿
-
-namespace DeQueueClasses
+﻿namespace DeQueueClasses
 {
     public class Stack
     {

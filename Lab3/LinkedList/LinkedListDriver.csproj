@@ -54,8 +54,8 @@
       <Project>{bce38786-373a-4ed9-8d30-93f47212dd66}</Project>
       <Name>StudentListClasses</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TextClass\TextClassClasses.csproj">
-      <Project>{286151b9-e047-4962-bf43-cde9375473cf}</Project>
+    <ProjectReference Include="..\TextClassClasses\TextClassClasses.csproj">
+      <Project>{612a57cc-e024-499d-abbc-829989d225e4}</Project>
       <Name>TextClassClasses</Name>
     </ProjectReference>
   </ItemGroup>

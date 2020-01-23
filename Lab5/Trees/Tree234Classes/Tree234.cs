@@ -1,8 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//  Based on
+//  Tree234.h and Tree234.cpp
+//  Lab5
+//
+//  Created by Jim Bailey on 5/12/17.
+//  Copyright © 2017 jim. All rights reserved.
+//
+//  Transpiled by Katie Strauss
 
 namespace Tree234Classes
 {
