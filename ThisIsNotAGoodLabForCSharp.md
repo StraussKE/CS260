@@ -1,5 +1,5 @@
 # Generics
-Generics are typically used to implement collections. In order to 
+Generics are typically used to implement collections (from what I could find). In order to 
 implement them in the manner of a template as necessary for this lab,
 you need to restrict them with the IComparable constraint.  This
 eliminates much of the utility available to a template, as in order
