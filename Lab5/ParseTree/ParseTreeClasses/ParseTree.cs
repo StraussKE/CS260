@@ -190,12 +190,13 @@ namespace ParseTreeClasses
                 char next = input[i];
 
                 // skip over white space
-                if (next == SPACE)
+                while (next == SPACE)
                 {
-                    continue;
+                    next = input[i++];
                 }
+
                 // output all operands
-                else if (IsOperand(next))
+                if (IsOperand(next))
                 {
                     buffer += next;
                 }
@@ -208,17 +209,14 @@ namespace ParseTreeClasses
                 // pop and output until matching opening paren
                 else if (next == RPAREN)
                 {
-                    while (theStack.Any())
+                    char afterParens = next;
+                    while (theStack.Any() && afterParens != LPAREN)
                     {
-                        char value = theStack.Peek();
+                        afterParens = theStack.Peek();
                         theStack.Pop();
-                        if (value == LPAREN)
+                        if (afterParens != LPAREN)
                         {
-                            break;
-                        }
-                        else
-                        {
-                            buffer += value;
+                            buffer += afterParens;
                         }
                     }
                 }
@@ -228,21 +226,22 @@ namespace ParseTreeClasses
                 // push this one on stack
                 else if (IsOperator(next))
                 {
-                    while (theStack.Any())
+                    bool pemdas = false;
+                    while (theStack.Any() && !pemdas)
                     {
                         char value = theStack.Peek();
                         theStack.Pop();
                         if (value == LPAREN)
                         {
                             theStack.Push(value);
-                            break;
+                            pemdas = true;
                         }
                         else
                         {
                             if (HigherPrec(next, value))
                             {
                                 theStack.Push(value);
-                                break;
+                                pemdas = true;
                             }
                             else
                             {

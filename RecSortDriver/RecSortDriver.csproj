@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lab7\Heap\Heap\Heap.csproj" />
+    <ProjectReference Include="..\Lab7\PriorityQ\PriorityQ\PriorityQ.csproj" />
+    <ProjectReference Include="..\Lab7\RecSorts\RecursiveSorts\RecursiveSorts.csproj" />
+  </ItemGroup>
+
+</Project>

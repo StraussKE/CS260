@@ -67,9 +67,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sorts\Sorts.csproj">
-      <Project>{b4cd29ab-0d1c-4304-a4e9-3786fcae5c9d}</Project>
-      <Name>Sorts</Name>
+    <ProjectReference Include="..\Heap\Heap\Heap.csproj">
+      <Project>{db3e7c1a-6f77-41ab-94b2-00845f9dec9d}</Project>
+      <Name>Heap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PriorityQ\PriorityQ\PriorityQ.csproj">
+      <Project>{31aaf1be-2c59-4ef0-b22c-baa8b9e7a320}</Project>
+      <Name>PriorityQ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RecSorts\RecursiveSorts\RecursiveSorts.csproj">
+      <Project>{a6cd671a-9c79-4208-a797-2175158aa7c7}</Project>
+      <Name>RecursiveSorts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

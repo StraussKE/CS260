@@ -9,9 +9,8 @@
 //  Transpiled by Katie Strauss 11/13/2019
 
 using System;
-using HeapClass;
-using PriorityQ;
 using RecursiveSorts;
+using static RecursiveSorts.RecSorts;
 
 namespace Lab7HeapSort
 {
@@ -24,12 +23,12 @@ namespace Lab7HeapSort
         {
             // Uncomment line to run test
 
-             TestHeap();
-             TestPriorityQ();
-             TestHeapSort();
-             //TestMergeSort();
-             //TestQuickSort();
-             //TestFindNth();
+            TestHeap();
+            TestPriorityQ();
+            TestHeapSort();
+            TestMergeSort();
+            TestQuickSort();
+            TestFindNth();
 
             Console.Write("Press Enter to exit.");
             Console.Read();
@@ -64,8 +63,8 @@ namespace Lab7HeapSort
 
         static void TestHeap()
         {
-            
-            int [] heapVals= new int[NUM_VALUES] { 10, 5, 30, 15, 20, 40, 60, 25, 50, 35, 45, 65, 70, 75, 55 };
+
+            int[] heapVals = new int[NUM_VALUES] { 10, 5, 30, 15, 20, 40, 60, 25, 50, 35, 45, 65, 70, 75, 55 };
 
             Console.Write("Creating heap of default size (10)\n");
             Heap pile = new Heap();
@@ -90,16 +89,17 @@ namespace Lab7HeapSort
                 pile.GetItem();
                 Console.Write("Should have failed, but did not\n");
             }
-            catch (IndexOutOfRangeException ex) {
+            catch (IndexOutOfRangeException ex)
+            {
                 Console.Write("Caught error message: " + ex.Message + "\n");
             }
 
             Console.Write("\nDone with testing heap\n\n");
-         }
+        }
 
         static void TestPriorityQ()
         {
-            int [] pqVals= new int[NUM_VALUES]{ 2, 4, 6, 8, 10, 1, 3, 5, 7, 9, 11, 15, 12, 14, 13 };
+            int[] pqVals = new int[NUM_VALUES] { 2, 4, 6, 8, 10, 1, 3, 5, 7, 9, 11, 15, 12, 14, 13 };
 
             Console.Write("Creating priority queue of default size (10)\n");
             PriorityQueue pList = new PriorityQueue();
@@ -124,16 +124,17 @@ namespace Lab7HeapSort
                 pList.GetItem();
                 Console.Write("Should have failed, but did not\n");
             }
-            catch (IndexOutOfRangeException ex) {
+            catch (IndexOutOfRangeException ex)
+            {
                 Console.Write("Caught error message: " + ex.Message + "\n");
             }
 
             Console.Write("\nDone with testing priority queue\n\n");
         }
-        
+
         static void TestHeapSort()
         {
-            int [] heapArray= new int[NUM_VALUES]{ 41, 2, 3, 5, 13, 17, 43, 23, 29, 7, 11, 19, 31, 37, 47 };
+            int[] heapArray = new int[NUM_VALUES] { 41, 2, 3, 5, 13, 17, 43, 23, 29, 7, 11, 19, 31, 37, 47 };
 
             // show starting array
             Console.Write("Starting array is \n");
@@ -142,7 +143,7 @@ namespace Lab7HeapSort
             Console.Write("\n");
 
             // now sort it
-            heapArray = new HeapSort(heapArray, NUM_VALUES).GetSortedHeap();
+            HeapSort(heapArray, NUM_VALUES);
 
             // show updated array, should be in ascending order
             Console.Write("Now the array should be sorted\n");
@@ -154,10 +155,10 @@ namespace Lab7HeapSort
 
             Console.Write("\nDone with testing heap sort\n\n");
         }
-/*
+
         static void TestMergeSort()
         {
-            int [] mergeArray= new int[NUM_VALUES]{ 41, 2, 3, 5, 13, 17, 43, 23, 29, 7, 11, 19, 31, 37, 47 };
+            int[] mergeArray = new int[NUM_VALUES] { 41, 2, 3, 5, 13, 17, 43, 23, 29, 7, 11, 19, 31, 37, 47 };
 
             // show starting array
             Console.Write("Starting array is \n");
@@ -181,7 +182,7 @@ namespace Lab7HeapSort
 
         static void TestQuickSort()
         {
-            int [] quickArray = new int[NUM_VALUES] { 41, 2, 3, 5, 13, 17, 43, 23, 29, 7, 11, 19, 31, 37, 47 };
+            int[] quickArray = new int[NUM_VALUES] { 41, 2, 3, 5, 13, 17, 43, 23, 29, 7, 11, 19, 31, 37, 47 };
 
             // show starting array
             Console.Write("Starting array is \n");
@@ -205,7 +206,7 @@ namespace Lab7HeapSort
 
         static void TestFindNth()
         {
-            int [] findArray = new int[NUM_VALUES] { 41, 2, 3, 5, 13, 17, 43, 23, 29, 7, 11, 19, 31, 37, 47 };
+            int[] findArray = new int[NUM_VALUES] { 41, 2, 3, 5, 13, 17, 43, 23, 29, 7, 11, 19, 31, 37, 47 };
 
             // show starting array
             Console.Write("Starting array is \n");
@@ -227,6 +228,6 @@ namespace Lab7HeapSort
             Console.Write("\n");
 
             Console.Write("\nDone with testing findNth \n\n");
-        }*/
+        }
     }
 }
